@@ -4,4 +4,49 @@
   margin: 0;
 }
 
+body {
+  font-family: 'Open Sans';
+  font-weight: 200;
+  color: #fff;
+  margin: auto;
+}
+
+header {
+  background: url(/images/jumbotron.png) center/cover no-repeat fixed;
+  height: 1080px;
+}
+
+header .wide-container {
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+header .wide-container .text-container {
+  position: absolute;
+  top: 520px;
+  width: 450px;
+}
+
+header .wide-container .text-container .title-jumbotron {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+header .wide-container .text-container p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+header .wide-container .phone {
+  position: absolute;
+  top: 290px;
+  right: -100px;
+  background: url(/images/phone.png) no-repeat;
+  width: 716px;
+  height: 948px;
+}
+
 /*# sourceMappingURL=style.css.map */

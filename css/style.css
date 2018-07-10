@@ -13,7 +13,7 @@ body {
 
 header {
   background: url(/images/jumbotron.png) center/cover no-repeat fixed;
-  height: 1080px;
+  height: 950px;
 }
 
 header .wide-container {
@@ -47,6 +47,27 @@ header .wide-container .phone {
   background: url(/images/phone.png) no-repeat;
   width: 716px;
   height: 948px;
+}
+
+article {
+  height: 545px;
+}
+
+article .container {
+  margin-top: 120px;
+  padding: 0;
+}
+
+article .container p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #959595;
+  margin-bottom: 30px;
+}
+
+article .container .article-title {
+  font-size: 35px;
+  color: #222626;
 }
 
 /*# sourceMappingURL=style.css.map */

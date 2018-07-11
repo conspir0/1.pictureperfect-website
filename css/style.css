@@ -1,13 +1,21 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 body {
+  box-sizing: border-box;
   font-family: 'Open Sans';
   font-weight: 200;
   color: #fff;
+  margin: auto;
+}
+
+.main-width {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+}
+
+.section-width {
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
   margin: auto;
 }
 
@@ -16,31 +24,24 @@ header {
   height: 950px;
 }
 
-header .wide-container {
-  position: relative;
-  width: 100%;
-  max-width: 1170px;
-  margin: auto;
-}
-
-header .wide-container .text-container {
+header .text-container {
   position: absolute;
   top: 520px;
   width: 450px;
 }
 
-header .wide-container .text-container .title-jumbotron {
+header .text-container .title-jumbotron {
   font-size: 60px;
   line-height: 60px;
   margin-bottom: 20px;
 }
 
-header .wide-container .text-container p {
+header .text-container p {
   font-size: 13px;
   line-height: 24px;
 }
 
-header .wide-container .phone {
+header .phone {
   position: absolute;
   top: 290px;
   right: -100px;
@@ -59,15 +60,74 @@ article .container {
 }
 
 article .container p {
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 24px;
   color: #959595;
-  margin-bottom: 30px;
 }
 
 article .container .article-title {
   font-size: 35px;
   color: #222626;
+}
+
+.boxes .container {
+  margin-right: 0;
+  max-width: 1545px;
+  width: 100%;
+}
+
+.boxes [class*='box-'] {
+  height: 280px;
+  padding: 0;
+}
+
+.boxes .box-1 {
+  background-color: #f5989d;
+}
+
+.boxes .box-2 {
+  background-color: #615f7d;
+}
+
+.boxes .box-3 {
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-3.png) center/cover no-repeat;
+}
+
+.boxes .box-4 {
+  background-color: #bd8cbf;
+}
+
+.boxes .box-5 {
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-5.png) center/cover no-repeat;
+}
+
+.boxes .box-6 {
+  background-color: #82ca9c;
+}
+
+.boxes .box-7 {
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-7.png) center/cover no-repeat;
+}
+
+.boxes .article-title {
+  font-size: 30px;
+  padding: 50px 50px 30px 50px;
+  margin: 0;
+}
+
+.boxes p {
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 50px;
+  max-width: 550px;
+}
+
+.boxes p.link {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -51,11 +51,11 @@ header .phone {
 }
 
 article {
-  height: 545px;
+  height: 430px;
 }
 
 article .container {
-  margin-top: 120px;
+  margin-top: 100px;
   padding: 0;
 }
 
@@ -128,5 +128,15 @@ article .container .article-title {
   bottom: 25px;
   left: 0;
   font-weight: 800;
+}
+
+article.second-article .title {
+  font-weight: 800;
+  color: #67676d;
+  padding-top: 40px;
+}
+
+article.second-article p {
+  text-align: justify;
 }
 /*# sourceMappingURL=style.prefixed.css.map */

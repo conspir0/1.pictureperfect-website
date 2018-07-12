@@ -3,172 +3,179 @@ body {
   font-family: 'Open Sans';
   font-weight: 200;
   color: #fff;
-  margin: auto;
 }
 
 .main-width {
+  width: 100%;
   max-width: 1920px;
-  width: 100%;
   margin: auto;
 }
 
-.section-width {
-  position: relative;
-  max-width: 1170px;
-  width: 100%;
-  margin: auto;
-}
-
-header {
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat fixed;
-  height: 950px;
-}
-
-header .text-container {
-  position: absolute;
-  top: 520px;
-  width: 450px;
-}
-
-header .text-container .title-jumbotron {
+.large-title {
   font-size: 60px;
-  line-height: 60px;
-  margin-bottom: 20px;
+  line-height: 70px;
+  padding-bottom: 10px;
 }
 
-header .text-container p {
+.medium-title {
+  font-size: 35px;
+  line-height: 45px;
+  padding-bottom: 10px;
+}
+
+.small-title {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+.text-content {
   font-size: 13px;
   line-height: 24px;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
-header .phone {
-  position: absolute;
-  top: 290px;
-  right: -100px;
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/phone.png) no-repeat;
-  width: 716px;
-  height: 948px;
+.link {
+  font-weight: 800;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+}
+
+.flex-direction {
+  flex-direction: column;
 }
 
 article {
-  height: 430px;
+  padding: 90px 0 50px 0;
 }
 
-article .container {
-  margin-top: 100px;
-  padding: 0;
+.main-jumbotron {
+  height: 950px;
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat fixed;
 }
 
-article .container p {
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 24px;
-  color: #959595;
+.main-jumbotron .flex-align {
+  height: 950px;
 }
 
-article .container .article-title {
-  font-size: 35px;
+.main-jumbotron .flex-align .text-content {
+  width: 450px;
+}
+
+.first-article .medium-title {
   color: #222626;
+}
+
+.first-article .text-content {
+  color: #959595;
 }
 
 .boxes .container {
   margin-right: 0;
-  max-width: 1545px;
   width: 100%;
+  max-width: 1545px;
 }
 
-.boxes [class*='box-'] {
-  height: 280px;
-  padding: 0;
-}
-
-.boxes .box-1 {
-  background-color: #f5989d;
-}
-
-.boxes .box-2 {
-  background-color: #615f7d;
-}
-
-.boxes .box-3 {
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-3.png) center/cover no-repeat;
-}
-
-.boxes .box-4 {
-  background-color: #bd8cbf;
-}
-
-.boxes .box-5 {
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-5.png) center/cover no-repeat;
-}
-
-.boxes .box-6 {
-  background-color: #82ca9c;
-}
-
-.boxes .box-7 {
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-7.png) center/cover no-repeat;
-}
-
-.boxes .article-title {
-  font-size: 30px;
-  padding: 50px 50px 30px 50px;
+.boxes .container .row {
   margin: 0;
 }
 
-.boxes p {
-  font-size: 13px;
-  line-height: 24px;
-  padding: 0 50px;
-  max-width: 550px;
+.boxes .container .row [class*='box-'] {
+  height: 280px;
+  padding: 50px 50px 30px 50px;
 }
 
-.boxes p.link {
+.boxes .container .row [class*='box-'] .medium-title {
+  font-size: 30px;
+}
+
+.boxes .container .row [class*='box-'] .text-content {
+  width: 100%;
+  max-width: 400px;
+}
+
+.boxes .container .row [class*='box-'] .link {
   position: absolute;
-  bottom: 25px;
-  left: 0;
-  font-weight: 800;
+  bottom: 20px;
+  left: 50px;
 }
 
-article.second-article .title {
-  font-weight: 800;
+.boxes .container .row .box-1 {
+  background-color: #f5989d;
+}
+
+.boxes .container .row .box-2 {
+  background-color: #615f7d;
+}
+
+.boxes .container .row .box-3 {
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-3.png) center/cover no-repeat;
+}
+
+.boxes .container .row .box-4 {
+  background-color: #bd8cbf;
+}
+
+.boxes .container .row .box-5 {
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-5.png) center/cover no-repeat;
+}
+
+.boxes .container .row .box-6 {
+  background-color: #82ca9c;
+}
+
+.boxes .container .row .box-7 {
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-7.png) center/cover no-repeat;
+}
+
+.second-article .medium-title {
   color: #67676d;
-  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
-article.second-article p {
+.second-article .small-title {
+  color: #67676d;
+}
+
+.second-article .text-content {
+  color: #959595;
   text-align: justify;
 }
 
-section.second-jumbotron {
-  position: relative;
+.second-jumbotron {
+  height: 875px;
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed;
-  height: 870px;
 }
 
-section.second-jumbotron .text-container {
-  position: absolute;
-  top: 450px;
-  width: 510px;
+.second-jumbotron .flex-align {
+  height: 875px;
+  width: 100%;
+  max-width: 550px;
 }
 
-section.second-jumbotron .text-container .title-jumbotron {
-  font-size: 60px;
-  line-height: 70px;
-  margin-bottom: 20px;
+.second-jumbotron .flex-align .large-title {
+  padding-top: 300px;
 }
 
-section.second-jumbotron .text-container .content-jumbotron {
-  font-size: 13px;
-  line-height: 24px;
-  padding-right: 60px;
+.second-jumbotron .flex-align .text-content {
+  padding-right: 100px;
 }
 
-section.second-jumbotron .text-container .link {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  font-weight: 800;
+.third-article {
+  background-color: #82ca9c;
+}
+
+.third-article .medium-title {
+  padding-bottom: 50px;
+}
+
+.third-article .text-content {
+  padding-right: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

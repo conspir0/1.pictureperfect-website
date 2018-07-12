@@ -140,4 +140,35 @@ article.second-article p {
   text-align: justify;
 }
 
+section.second-jumbotron {
+  position: relative;
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed;
+  height: 870px;
+}
+
+section.second-jumbotron .text-container {
+  position: absolute;
+  top: 450px;
+  width: 510px;
+}
+
+section.second-jumbotron .text-container .title-jumbotron {
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+
+section.second-jumbotron .text-container .content-jumbotron {
+  font-size: 13px;
+  line-height: 24px;
+  padding-right: 60px;
+}
+
+section.second-jumbotron .text-container .link {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  font-weight: 800;
+}
+
 /*# sourceMappingURL=style.css.map */

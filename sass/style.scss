@@ -115,7 +115,7 @@ article {
     }
 }
 
-// SECON ARTICLE
+// SECOND ARTICLE
 article.second-article {
     .title {
         font-weight: 800;
@@ -124,5 +124,33 @@ article.second-article {
     }
     p {
         text-align: justify;
+    }
+}
+
+// SECOND JUMBOTRON
+section.second-jumbotron {
+    position: relative;
+    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed;
+    height: 870px;
+    .text-container {
+        position: absolute;
+        top: 450px;
+        width: 510px;
+        .title-jumbotron {
+            font-size: 60px;
+            line-height: 70px;
+            margin-bottom: 20px;
+        }
+        .content-jumbotron {
+            font-size: 13px;
+            line-height: 24px;
+            padding-right: 60px;
+        }
+        .link {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            font-weight: 800;
+        }
     }
 }

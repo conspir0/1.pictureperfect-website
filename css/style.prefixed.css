@@ -183,6 +183,7 @@ article {
 
 .containers {
   padding: 100px 0;
+  background-color: #f6f7fa;
 }
 
 .containers [class*='cont-'] {
@@ -234,5 +235,42 @@ article {
 
 .containers [class*='cont-'] .icon-2 {
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-windows.png) center/cover no-repeat;
+}
+
+footer {
+  background-color: #192431;
+  padding: 140px 0;
+}
+
+footer .link {
+  font-weight: lighter;
+}
+
+footer .text-under-input {
+  color: #57697f;
+  width: 330px;
+}
+
+footer .substr-input {
+  border: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 15px;
+  height: 60px;
+  width: 400px;
+  float: left;
+  font-size: 25px;
+  color: #192431;
+}
+
+footer .substr-btn {
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 60px;
+  width: 60px;
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/send-button.png) center/cover no-repeat;
+  background-size: 30px;
+  background-color: #82ca9c;
 }
 /*# sourceMappingURL=style.prefixed.css.map */

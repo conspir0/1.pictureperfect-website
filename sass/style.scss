@@ -162,6 +162,7 @@ article {
 // CONTAINERS
 .containers {
     padding: 100px 0;
+    background-color: #f6f7fa;
     [class*='cont-'] {
         padding: 50px;
         margin: 10px;
@@ -205,5 +206,39 @@ article {
         .icon-2 {
             background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-windows.png) center/cover no-repeat;
         }
+    }
+}
+
+// FOOTER
+footer {
+    background-color: #192431;
+    padding: 140px 0;
+    .link {
+        font-weight: lighter;
+    }
+    .text-under-input {
+        color: #57697f;
+        width: 330px;
+    }
+    .substr-input {
+        border: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 15px;
+        height: 60px;
+        width: 400px;
+        float: left;
+        font-size: 25px;
+        color: #192431;
+    }
+    .substr-btn {
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 60px;
+        width: 60px;
+        background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/send-button.png) center/cover no-repeat;
+        background-size: 30px;
+        background-color: #82ca9c;
     }
 }

@@ -67,6 +67,12 @@ article {
   width: 450px;
 }
 
+.main-jumbotron .phone {
+  position: relative;
+  top: 30%;
+  left: -15%;
+}
+
 .first-article .medium-title {
   color: #222626;
 }

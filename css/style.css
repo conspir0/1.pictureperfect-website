@@ -1,181 +1,93 @@
-body {
-  box-sizing: border-box;
-  font-family: 'Open Sans';
-  font-weight: 200;
-  color: #fff;
-}
+body { box-sizing: border-box; font-family: 'Open Sans'; font-weight: 200; color: #fff; }
 
-.main-width {
-  width: 100%;
-  max-width: 1920px;
-  margin: auto;
-}
+.main-width { width: 100%; max-width: 1920px; margin: auto; }
 
-.large-title {
-  font-size: 60px;
-  line-height: 70px;
-  padding-bottom: 10px;
-}
+.large-title { font-size: 60px; line-height: 70px; padding-bottom: 10px; }
 
-.medium-title {
-  font-size: 35px;
-  line-height: 45px;
-  padding-bottom: 10px;
-}
+.medium-title { font-size: 35px; line-height: 45px; padding-bottom: 10px; }
 
-.small-title {
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 24px;
-  padding-bottom: 10px;
-}
+.small-title { font-size: 13px; font-weight: bold; line-height: 24px; padding-bottom: 10px; }
 
-.text-content {
-  font-size: 13px;
-  line-height: 24px;
-  width: 100%;
-  padding-bottom: 10px;
-}
+.text-content { font-size: 13px; line-height: 24px; width: 100%; padding-bottom: 10px; }
 
-.link {
-  font-weight: 800;
-}
+.link { font-weight: 800; }
 
-.flex-align {
-  display: flex;
-  align-items: center;
-}
+.flex-align { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
-.flex-direction {
-  flex-direction: column;
-}
+.flex-direction { -ms-flex-direction: column; flex-direction: column; }
 
-article {
-  padding: 90px 0 50px 0;
-}
+article { padding: 90px 0 50px 0; }
 
-.main-jumbotron {
-  height: 950px;
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat fixed;
-}
+.main-jumbotron { height: 950px; background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat fixed; }
 
-.main-jumbotron .flex-align {
-  height: 950px;
-}
+.main-jumbotron .flex-align { height: 950px; }
 
-.main-jumbotron .flex-align .text-content {
-  width: 450px;
-}
+.main-jumbotron .flex-align .text-content { width: 450px; }
 
-.first-article .medium-title {
-  color: #222626;
-}
+.first-article .medium-title { color: #222626; }
 
-.first-article .text-content {
-  color: #959595;
-}
+.first-article .text-content { color: #959595; }
 
-.boxes .container {
-  margin-right: 0;
-  width: 100%;
-  max-width: 1545px;
-}
+.boxes .container { margin-right: 0; width: 100%; max-width: 1545px; }
 
-.boxes .container .row {
-  margin: 0;
-}
+.boxes .container .row { margin: 0; }
 
-.boxes .container .row [class*='box-'] {
-  height: 280px;
-  padding: 50px 50px 30px 50px;
-}
+.boxes .container .row [class*='box-'] { height: 280px; padding: 50px 50px 30px 50px; }
 
-.boxes .container .row [class*='box-'] .medium-title {
-  font-size: 30px;
-}
+.boxes .container .row [class*='box-'] .medium-title { font-size: 30px; }
 
-.boxes .container .row [class*='box-'] .text-content {
-  width: 100%;
-  max-width: 400px;
-}
+.boxes .container .row [class*='box-'] .text-content { width: 100%; max-width: 400px; }
 
-.boxes .container .row [class*='box-'] .link {
-  position: absolute;
-  bottom: 20px;
-  left: 50px;
-}
+.boxes .container .row [class*='box-'] .link { position: absolute; bottom: 20px; left: 50px; }
 
-.boxes .container .row .box-1 {
-  background-color: #f5989d;
-}
+.boxes .container .row .box-1 { background-color: #f5989d; }
 
-.boxes .container .row .box-2 {
-  background-color: #615f7d;
-}
+.boxes .container .row .box-2 { background-color: #615f7d; }
 
-.boxes .container .row .box-3 {
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-3.png) center/cover no-repeat;
-}
+.boxes .container .row .box-3 { background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-3.png) center/cover no-repeat; }
 
-.boxes .container .row .box-4 {
-  background-color: #bd8cbf;
-}
+.boxes .container .row .box-4 { background-color: #bd8cbf; }
 
-.boxes .container .row .box-5 {
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-5.png) center/cover no-repeat;
-}
+.boxes .container .row .box-5 { background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-5.png) center/cover no-repeat; }
 
-.boxes .container .row .box-6 {
-  background-color: #82ca9c;
-}
+.boxes .container .row .box-6 { background-color: #82ca9c; }
 
-.boxes .container .row .box-7 {
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-7.png) center/cover no-repeat;
-}
+.boxes .container .row .box-7 { background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-7.png) center/cover no-repeat; }
 
-.second-article .medium-title {
-  color: #67676d;
-  padding-bottom: 50px;
-}
+.second-article .medium-title { color: #67676d; padding-bottom: 50px; }
 
-.second-article .small-title {
-  color: #67676d;
-}
+.second-article .small-title { color: #67676d; }
 
-.second-article .text-content {
-  color: #959595;
-  text-align: justify;
-}
+.second-article .text-content { color: #959595; text-align: justify; }
 
-.second-jumbotron {
-  height: 875px;
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed;
-}
+.second-jumbotron { height: 875px; background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed; }
 
-.second-jumbotron .flex-align {
-  height: 875px;
-  width: 100%;
-  max-width: 550px;
-}
+.second-jumbotron .flex-align { height: 875px; width: 100%; max-width: 550px; }
 
-.second-jumbotron .flex-align .large-title {
-  padding-top: 300px;
-}
+.second-jumbotron .flex-align .large-title { padding-top: 300px; }
 
-.second-jumbotron .flex-align .text-content {
-  padding-right: 100px;
-}
+.second-jumbotron .flex-align .text-content { padding-right: 100px; }
 
-.third-article {
-  background-color: #82ca9c;
-}
+.third-article { background-color: #82ca9c; }
 
-.third-article .medium-title {
-  padding-bottom: 50px;
-}
+.third-article .medium-title { padding-bottom: 50px; }
 
-.third-article .text-content {
-  padding-right: 30px;
-}
+.third-article .text-content { padding-right: 30px; }
 
-/*# sourceMappingURL=style.css.map */
+.containers { padding: 100px 0; }
+
+.containers [class*='cont-'] { padding: 50px; margin: 10px; width: calc(50% - 20px); }
+
+.containers [class*='cont-'] .tag { display: inline-block; font-size: 11px; font-weight: bold; background-color: #e1e1e1; padding: 10px 20px; border-radius: 6px; letter-spacing: 2px; }
+
+.containers [class*='cont-'] .medium-title { color: #2e3b4e; }
+
+.containers [class*='cont-'] .text-content { font-weight: normal; color: #8297a7; width: 380px; height: 100px; }
+
+.containers [class*='cont-'] button { background-color: #82ca9c; border: 1px solid #82ca9c; border-radius: 5px; padding: 15px 30px; font-weight: bold; letter-spacing: 3px; }
+
+.containers [class*='cont-'] [class*='icon-'] { height: 25px; width: 20px; float: left; margin: 20px 20px 10px 0; }
+
+.containers [class*='cont-'] .icon-1 { background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-apple.png) center/cover no-repeat; }
+
+.containers [class*='cont-'] .icon-2 { background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-windows.png) center/cover no-repeat; }

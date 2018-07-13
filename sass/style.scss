@@ -45,7 +45,7 @@ article {
     padding: 90px 0 50px 0;
 }
 
-//MAIN-JUMBOTRON
+// MAIN-JUMBOTRON
 .main-jumbotron {
     height: 950px;
     background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat fixed;
@@ -57,7 +57,7 @@ article {
     }
 }
 
-//FIRST ARTICLE
+// FIRST ARTICLE
 .first-article {
     .medium-title {
         color: #222626;
@@ -67,7 +67,7 @@ article {
     }
 }
 
-//BOXES
+// BOXES
 .boxes {
     .container {
         margin-right: 0;
@@ -116,7 +116,7 @@ article {
     }
 }
 
-//SECOND ARTICLE
+// SECOND ARTICLE
 .second-article {
     .medium-title {
         color: #67676d;
@@ -156,5 +156,54 @@ article {
     }
     .text-content {
         padding-right: 30px;
+    }
+}
+
+// CONTAINERS
+.containers {
+    padding: 100px 0;
+    [class*='cont-'] {
+        padding: 50px;
+        margin: 10px;
+        width: calc(50% - 20px);
+        .tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: bold;
+            background-color: #e1e1e1;
+            padding: 10px 20px;
+            border-radius: 6px;
+            letter-spacing: 2px;
+        }
+        .medium-title {
+            color: #2e3b4e;
+        }
+        .text-content {
+            font-weight: normal;
+            color: #8297a7;
+            width: 380px;
+            height: 100px;
+            
+        }
+        button {
+            background-color: #82ca9c;
+            border: 1px solid #82ca9c;
+            border-radius: 5px;
+            padding: 15px 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+        [class*='icon-'] {
+            height: 25px;
+            width: 20px;
+            float: left;
+            margin: 20px 20px 10px 0;
+        }
+        .icon-1 {
+            background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-apple.png) center/cover no-repeat;
+        }
+        .icon-2 {
+            background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-windows.png) center/cover no-repeat;
+        }
     }
 }

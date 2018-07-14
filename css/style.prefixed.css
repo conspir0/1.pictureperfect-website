@@ -21,6 +21,7 @@ body {
   font-size: 35px;
   line-height: 45px;
   padding-bottom: 10px;
+  transition: 1s;
 }
 
 .small-title {
@@ -39,6 +40,8 @@ body {
 
 .link {
   font-weight: 800;
+  color: #fff;
+  text-decoration: none;
 }
 
 .flex-align {
@@ -54,192 +57,236 @@ body {
 }
 
 article {
-  padding: 90px 0 50px 0;
+  padding: 90px 0;
 }
 
-.main-jumbotron {
+#main-jumbotron {
   height: 950px;
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat fixed;
+  transition: .8s;
 }
 
-.main-jumbotron .flex-align {
+#main-jumbotron .flex-align {
   height: 950px;
 }
 
-.main-jumbotron .flex-align .text-content {
+#main-jumbotron .flex-align .text-content {
   width: 450px;
 }
 
-.main-jumbotron .phone {
+#main-jumbotron .phone {
+  display: block;
   position: relative;
   top: 30%;
-  left: -15%;
+  left: -25.5%;
 }
 
-.first-article .medium-title {
+#first-article .medium-title {
   color: #222626;
 }
 
-.first-article .text-content {
+#first-article .text-content {
   color: #959595;
 }
 
-.boxes .container {
+#boxes .container {
   margin-right: 0;
   width: 100%;
   max-width: 1545px;
 }
 
-.boxes .container .row {
+#boxes .container .row {
   margin: 0;
 }
 
-.boxes .container .row [class*='box-'] {
-  height: 280px;
+#boxes .container .row [class*='box-'] {
+  height: 300px;
   padding: 50px 50px 30px 50px;
 }
 
-.boxes .container .row [class*='box-'] .medium-title {
+#boxes .container .row [class*='box-'] .medium-title {
   font-size: 30px;
 }
 
-.boxes .container .row [class*='box-'] .text-content {
+#boxes .container .row [class*='box-'] .text-content {
   width: 100%;
   max-width: 400px;
 }
 
-.boxes .container .row [class*='box-'] .link {
+#boxes .container .row [class*='box-'] .link {
   position: absolute;
   bottom: 20px;
   left: 50px;
 }
 
-.boxes .container .row .box-1 {
+#boxes .container .row .box-1 {
   background-color: #f5989d;
 }
 
-.boxes .container .row .box-2 {
+#boxes .container .row .box-2 {
   background-color: #615f7d;
 }
 
-.boxes .container .row .box-3 {
+#boxes .container .row .box-3 {
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-3.png) center/cover no-repeat;
 }
 
-.boxes .container .row .box-4 {
+#boxes .container .row .box-4 {
   background-color: #bd8cbf;
 }
 
-.boxes .container .row .box-5 {
+#boxes .container .row .box-5 {
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-5.png) center/cover no-repeat;
 }
 
-.boxes .container .row .box-6 {
+#boxes .container .row .box-6 {
   background-color: #82ca9c;
 }
 
-.boxes .container .row .box-7 {
+#boxes .container .row .box-7 {
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-7.png) center/cover no-repeat;
 }
 
-.second-article .medium-title {
+#second-article .medium-title {
   color: #67676d;
   padding-bottom: 50px;
 }
 
-.second-article .small-title {
+#second-article .small-title {
   color: #67676d;
 }
 
-.second-article .text-content {
+#second-article .text-content {
   color: #959595;
   text-align: justify;
 }
 
-.second-jumbotron {
+#second-jumbotron {
   height: 875px;
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed;
 }
 
-.second-jumbotron .flex-align {
+#second-jumbotron .flex-align {
   height: 875px;
   width: 100%;
   max-width: 550px;
 }
 
-.second-jumbotron .flex-align .large-title {
+#second-jumbotron .flex-align .large-title {
   padding-top: 300px;
 }
 
-.second-jumbotron .flex-align .text-content {
+#second-jumbotron .flex-align .text-content {
   padding-right: 100px;
 }
 
-.third-article {
+#third-article {
   background-color: #82ca9c;
 }
 
-.third-article .medium-title {
+#third-article .medium-title {
   padding-bottom: 50px;
 }
 
-.third-article .text-content {
+#third-article .text-content {
   padding-right: 30px;
 }
 
-.containers {
+#containers {
   padding: 100px 0;
   background-color: #f6f7fa;
 }
 
-.containers [class*='cont-'] {
-  padding: 50px;
+#containers [class*='cont-'] {
+  position: static;
+  padding: 50px 50px 30px;
+  margin: auto;
   margin: 10px;
-  width: calc(50% - 20px);
+  min-width: 500px;
+  max-width: calc(50% - 40px);
+  transition: .8s;
 }
 
-.containers [class*='cont-'] .tag {
+#containers [class*='cont-'] [class*='col-md-'] {
+  margin-top: 40px;
+}
+
+#containers [class*='cont-']:hover {
+  background-color: #fff;
+  box-shadow: 10px 10px 60px #e1e1e1;
+}
+
+#containers [class*='cont-']:hover .tag {
+  background-color: #bd8cbf;
+}
+
+#containers [class*='cont-'] .tag {
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
   background-color: #e1e1e1;
   padding: 10px 20px;
+  margin-bottom: 40px;
   border-radius: 6px;
   letter-spacing: 2px;
+  transition: .5s;
 }
 
-.containers [class*='cont-'] .medium-title {
+#containers [class*='cont-'] .medium-title {
   color: #2e3b4e;
 }
 
-.containers [class*='cont-'] .text-content {
+#containers [class*='cont-'] .text-content {
   font-weight: normal;
   color: #8297a7;
   width: 380px;
   height: 100px;
 }
 
-.containers [class*='cont-'] button {
+#containers [class*='cont-'] button {
   background-color: #82ca9c;
   border: 1px solid #82ca9c;
   border-radius: 5px;
   padding: 15px 30px;
   font-weight: bold;
   letter-spacing: 3px;
+  transition: .3s;
 }
 
-.containers [class*='cont-'] [class*='icon-'] {
+#containers [class*='cont-'] button:hover {
+  background-color: inherit;
+  color: #82ca9c;
+}
+
+#containers [class*='cont-'] .icons {
+  height: 30px;
+  margin: 20px 0 0 0;
+}
+
+#containers [class*='cont-'] .icons .icon-box {
+  float: left;
+  height: 30px;
+  width: 25px;
+  margin: 0 10px;
+}
+
+#containers [class*='cont-'] .icons .icon-box [class*='icon-'] {
+  cursor: pointer;
   height: 25px;
   width: 20px;
-  float: left;
-  margin: 20px 20px 10px 0;
+  transition: .3s;
 }
 
-.containers [class*='cont-'] .icon-1 {
+#containers [class*='cont-'] .icons .icon-box [class*='icon-']:hover {
+  height: 30px;
+  width: 25px;
+}
+
+#containers [class*='cont-'] .icons .icon-box .icon-1 {
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-apple.png) center/cover no-repeat;
 }
 
-.containers [class*='cont-'] .icon-2 {
+#containers [class*='cont-'] .icons .icon-box .icon-2 {
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-windows.png) center/cover no-repeat;
 }
 
@@ -278,5 +325,28 @@ footer .substr-btn {
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/send-button.png) center/cover no-repeat;
   background-size: 30px;
   background-color: #82ca9c;
+  transition: 0.3s;
+}
+
+footer .substr-btn:hover {
+  background-color: #60aa7a;
+}
+
+@media (min-width: 1199.98px) and (max-width: 1370px) {
+  #boxes .container .row [class*='box-'] {
+    padding: 40px 40px 30px 40px;
+  }
+  #boxes .container .row [class*='box-'] .medium-title {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #main-jumbotron .photo {
+    display: none;
+  }
+  #containers [class*="cont-"] {
+    margin: 20px auto;
+  }
 }
 /*# sourceMappingURL=style.prefixed.css.map */

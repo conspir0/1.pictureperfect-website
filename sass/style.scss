@@ -18,6 +18,7 @@ body {
     font-size: 35px;
     line-height: 45px;
     padding-bottom: 10px;
+    transition: 1s;
 }
 .small-title {
     font-size: 13px;
@@ -33,6 +34,8 @@ body {
 }
 .link {
     font-weight: 800;
+    color: #fff;
+    text-decoration: none;
 }
 .flex-align {
     display: flex;
@@ -42,13 +45,14 @@ body {
     flex-direction: column;
 }
 article {
-    padding: 90px 0 50px 0;
+    padding: 90px 0;
 }
 
 // MAIN-JUMBOTRON
-.main-jumbotron {
+#main-jumbotron {
     height: 950px;
     background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat fixed;
+    transition: .8s;
     .flex-align {
         height: 950px;
         .text-content {
@@ -56,14 +60,15 @@ article {
         }
     }
     .phone {
+        display: block;
         position: relative;
         top: 30%;
-        left: -15%;
+        left: -25.5%;
     }
 }
 
 // FIRST ARTICLE
-.first-article {
+#first-article {
     .medium-title {
         color: #222626;
     }
@@ -73,7 +78,7 @@ article {
 }
 
 // BOXES
-.boxes {
+#boxes {
     .container {
         margin-right: 0;
         width: 100%;
@@ -81,7 +86,7 @@ article {
         .row {
             margin: 0;
             [class*='box-'] {
-                height: 280px;
+                height: 300px;
                 padding: 50px 50px 30px 50px;
                 .medium-title {
                     font-size: 30px;
@@ -94,7 +99,7 @@ article {
                     position: absolute;
                     bottom: 20px;
                     left: 50px;
-                }
+                }    
             }
             .box-1{
                 background-color: #f5989d;
@@ -120,9 +125,8 @@ article {
         }
     }
 }
-
 // SECOND ARTICLE
-.second-article {
+#second-article {
     .medium-title {
         color: #67676d;
         padding-bottom: 50px;
@@ -137,7 +141,7 @@ article {
 }
 
 // SECOND JUMBOTRON
-.second-jumbotron {
+#second-jumbotron {
     height: 875px;
     background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed;
     .flex-align {
@@ -154,7 +158,7 @@ article {
 }
 
 // THIRD ARTICLE
-.third-article {
+#third-article {
     background-color: #82ca9c;
     .medium-title {
         padding-bottom: 50px;
@@ -165,21 +169,38 @@ article {
 }
 
 // CONTAINERS
-.containers {
+#containers {
     padding: 100px 0;
     background-color: #f6f7fa;
     [class*='cont-'] {
-        padding: 50px;
+        position: static;
+        padding: 50px 50px 30px;
+        margin: auto;
         margin: 10px;
-        width: calc(50% - 20px);
+        min-width: 500px;
+        max-width: calc(50% - 40px);
+        transition: .8s;
+        [class*='col-md-'] {
+            margin-top: 40px;
+   
+        }
+        &:hover {
+            background-color: #fff;
+            box-shadow: 10px 10px 60px #e1e1e1;
+        }
+        &:hover .tag {
+            background-color: #bd8cbf;
+        }
         .tag {
             display: inline-block;
             font-size: 11px;
             font-weight: bold;
             background-color: #e1e1e1;
             padding: 10px 20px;
+            margin-bottom: 40px;
             border-radius: 6px;
             letter-spacing: 2px;
+            transition: .5s;
         }
         .medium-title {
             color: #2e3b4e;
@@ -198,22 +219,40 @@ article {
             padding: 15px 30px;
             font-weight: bold;
             letter-spacing: 3px;
+            transition: .3s;
+            &:hover {
+                background-color: inherit;
+                color: #82ca9c;
+            }
         }
-        [class*='icon-'] {
-            height: 25px;
-            width: 20px;
-            float: left;
-            margin: 20px 20px 10px 0;
-        }
-        .icon-1 {
-            background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-apple.png) center/cover no-repeat;
-        }
-        .icon-2 {
-            background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-windows.png) center/cover no-repeat;
+        .icons {
+            height: 30px;
+            margin: 20px 0 0 0;
+            .icon-box {
+                float: left;
+                height: 30px;
+                width: 25px;
+                margin: 0 10px;;
+                [class*='icon-'] {
+                    cursor: pointer;
+                    height: 25px;
+                    width: 20px;
+                    transition: .3s;
+                    &:hover {
+                        height: 30px;
+                        width: 25px;
+                    }
+                }
+                .icon-1 {
+                    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-apple.png) center/cover no-repeat;
+                }
+                .icon-2 {
+                    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-windows.png) center/cover no-repeat;
+                }
+            }   
         }
     }
 }
-
 // FOOTER
 footer {
     background-color: #192431;
@@ -245,5 +284,24 @@ footer {
         background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/send-button.png) center/cover no-repeat;
         background-size: 30px;
         background-color: #82ca9c;
+        transition: 0.3s;
+        &:hover {
+            background-color: #60aa7a;
+        }
+    }
+}
+@media (min-width:  1199.98px) and (max-width: 1370px) {
+    #boxes .container .row [class*='box-'] {
+        padding: 40px 40px 30px 40px;
+    }
+    #boxes .container .row [class*='box-'] .medium-title {
+        padding: 0;
+    }
+}
+@media (max-width: 1199.98px) {
+    #main-jumbotron .photo {display: none}
+    #containers [class*="cont-"] {
+        margin: 20px auto;
+        
     }
 }

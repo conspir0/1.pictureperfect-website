@@ -50,20 +50,20 @@ article {
 
 // MAIN-JUMBOTRON
 #main-jumbotron {
-    height: 950px;
+    height: 100vh;
     background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat fixed;
     transition: .8s;
     .flex-align {
-        height: 950px;
+        height: 100vh;
         .text-content {
-            width: 450px;
+            width: 100%;
         }
     }
     .phone {
         display: block;
         position: relative;
-        top: 30%;
-        left: -25.5%;
+        top: 300px;
+        left: -10%;
     }
 }
 
@@ -125,6 +125,7 @@ article {
         }
     }
 }
+
 // SECOND ARTICLE
 #second-article {
     .medium-title {
@@ -142,17 +143,15 @@ article {
 
 // SECOND JUMBOTRON
 #second-jumbotron {
-    height: 875px;
+    height: 100vh;
     background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed;
     .flex-align {
-        height: 875px;
-        width: 100%;
-        max-width: 550px;
-        .large-title {
-            padding-top: 300px;
+        height: 100vh;
+        .flex-direction {
+            padding-top: 200px;
         }
-        .text-content {
-            padding-right: 100px;
+        .text-content, .large-title {
+            padding-right: 50px;
         }
     }
 }
@@ -175,15 +174,7 @@ article {
     [class*='cont-'] {
         position: static;
         padding: 50px 50px 30px;
-        margin: auto;
-        margin: 10px;
-        min-width: 500px;
-        max-width: calc(50% - 40px);
         transition: .8s;
-        [class*='col-md-'] {
-            margin-top: 40px;
-   
-        }
         &:hover {
             background-color: #fff;
             box-shadow: 10px 10px 60px #e1e1e1;
@@ -207,10 +198,7 @@ article {
         }
         .text-content {
             font-weight: normal;
-            color: #8297a7;
-            width: 380px;
-            height: 100px;
-            
+            color: #8297a7;            
         }
         button {
             background-color: #82ca9c;
@@ -262,7 +250,7 @@ footer {
     }
     .text-under-input {
         color: #57697f;
-        width: 330px;
+        max-width: 330px;
     }
     .substr-input {
         border: 0;
@@ -270,7 +258,8 @@ footer {
         border-bottom-left-radius: 5px;
         padding: 15px;
         height: 60px;
-        width: 400px;
+        width: calc(100% - 60px);
+        max-width: 500px;
         float: left;
         font-size: 25px;
         color: #192431;
@@ -290,6 +279,12 @@ footer {
         }
     }
 }
+@media (min-width: 1199.98px) {
+    #containers [class*='cont-'] {
+        margin: 0 20px;
+        width: calc(50% - 40px);
+    }
+}
 @media (min-width:  1199.98px) and (max-width: 1370px) {
     #boxes .container .row [class*='box-'] {
         padding: 40px 40px 30px 40px;
@@ -303,5 +298,26 @@ footer {
     #containers [class*="cont-"] {
         margin: 20px auto;
         
+    }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    #containers [class*='cont-'] {
+        margin: 0 20px;
+        width: calc(50% - 40px);
+    }
+}
+@media (max-width: 768px) {
+    #containers [class*='cont-'] {
+        margin: 20px;
+        width: calc(100% - 40px);
+    }
+    #second-jumbotron .flex-align .text-content {
+        padding-right: 0;
+    }
+    #second-jumbotron .flex-align .large-title {
+        padding-right: 10px;
+    }
+    footer .substr-input {
+        font-size: 20px;
     }
 }

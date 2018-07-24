@@ -60,25 +60,44 @@ article {
   padding: 90px 0;
 }
 
-#main-jumbotron {
-  height: 100vh;
-  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat fixed;
+.main-jumbotron {
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat;
   transition: .8s;
 }
 
-#main-jumbotron .flex-align {
+.main-jumbotron .flex-align {
   height: 100vh;
 }
 
-#main-jumbotron .flex-align .text-content {
+.main-jumbotron .flex-align .text-content {
   width: 100%;
 }
 
-#main-jumbotron .phone {
+.main-jumbotron .phone {
   display: block;
   position: relative;
-  top: 300px;
-  left: -10%;
+  height: 100%;
+  top: 30vh;
+  left: 13vw;
+  cursor: pointer;
+  animation: phonePulse 2s infinite;
+}
+
+.change-jumbotron {
+  background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/bright-jumbotron.png) center/cover no-repeat;
+}
+
+@keyframes phonePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 #first-article .medium-title {
@@ -329,6 +348,9 @@ footer .substr-btn:hover {
 }
 
 @media (min-width: 1199.98px) and (max-width: 1370px) {
+  .main-jumbotron .photo {
+    left: 5vw;
+  }
   #boxes .container .row [class*='box-'] {
     padding: 40px 40px 30px 40px;
   }
@@ -338,15 +360,15 @@ footer .substr-btn:hover {
 }
 
 @media (max-width: 1199.98px) {
-  #main-jumbotron .photo {
-    display: none;
-  }
   #containers [class*="cont-"] {
     margin: 20px auto;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
+  .main-jumbotron .photo {
+    left: -24vw;
+  }
   #containers [class*='cont-'] {
     margin: 0 20px;
     width: calc(50% - 40px);
@@ -354,6 +376,9 @@ footer .substr-btn:hover {
 }
 
 @media (max-width: 768px) {
+  .main-jumbotron .photo {
+    display: none;
+  }
   #containers [class*='cont-'] {
     margin: 20px;
     width: calc(100% - 40px);

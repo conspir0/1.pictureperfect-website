@@ -204,12 +204,12 @@ article {
 }
 
 #second-jumbotron {
-  height: 100vh;
+  height: 100%;
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed;
 }
 
 #second-jumbotron .flex-align {
-  height: 100vh;
+  padding-bottom: 10%;
 }
 
 #second-jumbotron .flex-align .flex-direction {
@@ -218,6 +218,28 @@ article {
 
 #second-jumbotron .flex-align .text-content, #second-jumbotron .flex-align .large-title {
   padding-right: 50px;
+}
+
+#second-jumbotron .flex-align .link a {
+  position: absolute;
+  animation: buttonPulse 2s infinite;
+}
+
+#second-jumbotron .flex-align .link a:hover {
+  animation: none;
+}
+
+@keyframes buttonPulse {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #3ea4ae;
+    font-size: 15px;
+  }
+  100% {
+    color: #fff;
+  }
 }
 
 #third-article {
@@ -325,8 +347,12 @@ footer {
   padding: 140px 0;
 }
 
-footer .link {
+footer .link a {
   font-weight: lighter;
+}
+
+footer .link a:hover {
+  text-decoration: underline;
 }
 
 footer .text-under-input {

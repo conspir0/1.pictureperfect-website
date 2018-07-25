@@ -11,7 +11,7 @@ phone.addEventListener('click', function(event) {
 
 // Boxes
 
-var link = document.querySelectorAll('.link');
+var link = document.querySelectorAll('.link-boxes');
 
 var linkHover = function(event) {
     this.parentElement.classList.toggle('overlay');
@@ -20,4 +20,5 @@ var linkHover = function(event) {
 for(var i = 0; i < link.length; i++) {
     link[i].addEventListener('mouseenter', linkHover);
     link[i].addEventListener('mouseleave', linkHover);
+
 };

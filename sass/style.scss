@@ -153,7 +153,6 @@ article {
         }
     }
 }
-
 .overlay {
     position: absolute;
     top: 0;
@@ -181,16 +180,35 @@ article {
 
 // SECOND JUMBOTRON
 #second-jumbotron {
-    height: 100vh;
+    height: 100%;
     background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed;
     .flex-align {
-        height: 100vh;
+        padding-bottom: 10%;
         .flex-direction {
             padding-top: 200px;
         }
         .text-content, .large-title {
             padding-right: 50px;
         }
+        .link a{
+            position: absolute;
+            animation: buttonPulse 2s infinite;
+            &:hover {
+                animation: none;
+            }
+        }
+    }
+}
+@keyframes buttonPulse {
+    0% {
+        color: #fff;
+    }
+    50% {
+        color: #3ea4ae;
+        font-size: 15px;
+    }
+    100% {
+        color: #fff;
     }
 }
 
@@ -284,8 +302,11 @@ article {
 footer {
     background-color: #192431;
     padding: 140px 0;
-    .link {
+    .link a{
         font-weight: lighter;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     .text-under-input {
         color: #57697f;

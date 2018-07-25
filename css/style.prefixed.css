@@ -38,7 +38,7 @@ body {
   padding-bottom: 10px;
 }
 
-.link {
+.link a {
   font-weight: 800;
   color: #fff;
   text-decoration: none;
@@ -136,6 +136,19 @@ article {
   position: absolute;
   bottom: 20px;
   left: 50px;
+  width: calc(100% - 120px);
+}
+
+#boxes .container .row [class*='box-'] img {
+  position: absolute;
+  height: 0%;
+  margin-left: 10px;
+  transition: 3s;
+}
+
+#boxes .container .row [class*='box-'] .link:hover img {
+  margin-left: calc(100% - 80px);
+  height: 80%;
 }
 
 #boxes .container .row .box-1 {
@@ -164,6 +177,16 @@ article {
 
 #boxes .container .row .box-7 {
   background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-7.png) center/cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 50px 30px 50px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #second-article .medium-title {
@@ -352,6 +375,9 @@ footer .substr-btn:hover {
     left: 5vw;
   }
   #boxes .container .row [class*='box-'] {
+    padding: 40px 40px 30px 40px;
+  }
+  .overlay {
     padding: 40px 40px 30px 40px;
   }
   #boxes .container .row [class*='box-'] .medium-title {

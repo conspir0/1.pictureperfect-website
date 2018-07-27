@@ -51,7 +51,7 @@ article {
 // MAIN-JUMBOTRON
 .main-jumbotron {
     height: 100%;
-    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron.png) center/cover no-repeat;
+    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron/jumbotron.png) center/cover no-repeat;
     transition: .8s;
     .flex-align {
         height: 100vh;
@@ -70,7 +70,7 @@ article {
     }
 }
 .change-jumbotron {
-    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/bright-jumbotron.png) center/cover no-repeat;
+    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron/bright-jumbotron.png) center/cover no-repeat;
 }
 @keyframes phonePulse {
     0% {
@@ -136,19 +136,19 @@ article {
                 background-color: #615f7d;
             }
             .box-3{
-                background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-3.png) center/cover no-repeat;
+                background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/boxes/box-3.png) center/cover no-repeat;
             }
             .box-4{
                 background-color: #bd8cbf;
             }
             .box-5{
-                background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-5.png) center/cover no-repeat;
+                background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/boxes/box-5.png) center/cover no-repeat;
             }
             .box-6{
                 background-color: #82ca9c;
             }
             .box-7{
-                background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/box-7.png) center/cover no-repeat;
+                background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/boxes/box-7.png) center/cover no-repeat;
             }
         }
     }
@@ -181,7 +181,7 @@ article {
 // SECOND JUMBOTRON
 #second-jumbotron {
     height: 100%;
-    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron2.png) center/cover no-repeat fixed;
+    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/second-jumbotron/jumbotron2.png) center/cover no-repeat fixed;
     .flex-align {
         padding-bottom: 10%;
         .flex-direction {
@@ -288,10 +288,10 @@ article {
                     }
                 }
                 .icon-1 {
-                    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-apple.png) center/cover no-repeat;
+                    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/containers/fa-apple.png) center/cover no-repeat;
                 }
                 .icon-2 {
-                    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/fa-windows.png) center/cover no-repeat;
+                    background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/containers/fa-windows.png) center/cover no-repeat;
                 }
             }   
         }
@@ -330,7 +330,7 @@ footer {
         border-bottom-right-radius: 5px;
         height: 60px;
         width: 60px;
-        background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/send-button.png) center/cover no-repeat;
+        background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/input/send-button.png) center/cover no-repeat;
         background-size: 30px;
         background-color: #82ca9c;
         transition: 0.3s;

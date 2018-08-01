@@ -49,7 +49,7 @@ article {
 }
 
 // MAIN-JUMBOTRON
-.main-jumbotron {
+.first-jumbotron {
     height: 100%;
     background: url(https://raw.githubusercontent.com/conspir0/cut-psd-layout/master/images/jumbotron/jumbotron.png) center/cover no-repeat;
     transition: .8s;
@@ -61,10 +61,10 @@ article {
     }
     .phone {
         display: block;
-        position: relative;
-        height: 100%;
-        top: 30vh;
-        left: 13vw;
+        position: absolute;
+        height: 90%;
+        top: 30%;
+        right: 10%;
         cursor: pointer;
         animation: phonePulse 2s infinite;
     }
@@ -346,9 +346,6 @@ footer {
     }
 }
 @media (min-width:  1199.98px) and (max-width: 1370px) {
-    .main-jumbotron .photo{
-        left: 5vw;
-    }
     #boxes .container .row [class*='box-'] {
         padding: 40px 40px 30px 40px;
     }
@@ -365,8 +362,9 @@ footer {
     }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
-        .main-jumbotron .photo{
-        left: -24vw;
+    .first-jumbotron .phone{
+        top: 40%;    
+        height: 70%;
     }
     #containers [class*='cont-'] {
         margin: 0 20px;
@@ -374,7 +372,7 @@ footer {
     }
 }
 @media (max-width: 768px) {
-    .main-jumbotron .photo {
+    .first-jumbotron .phone {
         display: none;
     }
     #containers [class*='cont-'] {
